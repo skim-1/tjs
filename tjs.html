@@ -67,8 +67,6 @@
 	const balls = [
 		new THREE.Mesh( sgeo, smat ),
 		new THREE.Mesh( sgeo, smat ),
-		new THREE.Mesh( sgeo, smat ),
-		new THREE.Mesh( sgeo, smat )
 	];
 
 	balls.forEach((b) => scene.add(b));
@@ -76,8 +74,6 @@
 
 	balls[0].position.x -= 1;
 	balls[1].position.x += 1;
-	balls[2].position.x -= 4;
-	balls[3].position.x += 4;
 
 	const dragcontrols = new DragControls( balls, camera, renderer.domElement );
 	const Orcontrols = new OrbitControls( camera, renderer.domElement );
